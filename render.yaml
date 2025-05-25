@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: freefire-like-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python run.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 7694469492:AAGcJlBaY91LY5DQsd9LNGn1DZ0NVXzQJbc
+      - key: MONGO_URI
+        value: mongodb+srv://keshavrajlkr8:5XQbQFRIn89xQRi4@cluster0.e8tfylk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - key: AUTHORIZED_GROUPS
+        value: -1002287360773
