@@ -5,7 +5,7 @@ from datetime import datetime
 import requests
 from bot.database import has_liked_today, save_like
 
-AUTHORIZED_GROUPS = os.getenv("AUTHORIZED_GROUPS", "").split(",")
+AUTHORIZED_GROUPS = os.getenv("AUTHORIZED_GROUPS", "-1002269649979").split(",")
 
 async def like_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = str(update.effective_chat.id)
