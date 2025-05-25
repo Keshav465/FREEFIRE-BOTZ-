@@ -1,7 +1,6 @@
 import os
 from dotenv import load_dotenv
 from telegram.ext import ApplicationBuilder
-from bot.handlers import like_handler
 git add src/bot
 git commit -m "Add bot module"
 # Absolute import (if bot is in the same directory as main.py)
