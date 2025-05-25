@@ -1,7 +1,9 @@
 import os
 from pymongo import MongoClient
+pip install python-dotenv pymongo
 
-client = MongoClient(os.getenv("MONGO_URI"))
+
+client = MongoClient(os.getenv("mongodb+srv://keshavrajlkr8:5XQbQFRIn89xQRi4@cluster0.e8tfylk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"))
 db = client.like_bot
 likes_collection = db.likes
 
